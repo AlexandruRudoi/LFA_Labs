@@ -178,7 +178,7 @@ cc belongs to the language? False
 
 Below is a screenshot of the program execution:
 
-![Program Output](Lab_1/Lab_1.Application/resources/Result.png)
+![Program Output](Lab_1.Application/resources/Result.png)
 
 ---
 
