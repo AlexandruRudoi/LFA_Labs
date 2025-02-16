@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_1", "Lab_1\Lab_1.csproj", "{644ADEF5-445A-41F8-9748-3C0558A4A5E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_1.Application", "Lab_1.Application\Lab_1.Application.csproj", "{644ADEF5-445A-41F8-9748-3C0558A4A5E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_1.Tests", "Lab_1.Tests\Lab_1.Tests.csproj", "{7628F4D3-44EC-43FD-BEEC-FCD5E196480E}"
 EndProject

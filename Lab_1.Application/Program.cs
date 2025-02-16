@@ -1,6 +1,6 @@
 ﻿using Lab_1.Domain;
 
-namespace Lab_1;
+namespace Lab_1.Application;
 
 class Program
 {
