@@ -1,0 +1,12 @@
+Variant 27:
+VN={S, A, B},
+VT={a, b, c}, 
+P={ 
+    S → aA     
+    A → bS    
+    S → bB   
+    A → cA    
+    A → aB  
+    B → aB   
+    B → b
+}
