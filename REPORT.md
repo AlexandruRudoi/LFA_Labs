@@ -148,22 +148,23 @@ foreach (string word in generatedWords)
 
 I conclusion, this lab deepened my understanding of formal grammars and finite automata by requiring me to translate theoretical concepts into a functional model. Implementing the conversion from grammar to automaton and validating string membership helped me grasp how languages are structured and processed. Initially, I experimented with a Python version but found myself more engaged in C#, where working with structured data and transitions felt more intuitive and aligned with my problem-solving approach.
 
-### **Example Output:**
+### **Example Outputs:**
 
+**Console Output I:**
 ```
 Generated Strings:
-aab
-bb
-baab
-aaab
+ab
 bab
+babb
+acb
+ba
 
 Control if generated words are valid:
-aab belongs to the language? True
-bb belongs to the language? True
-baab belongs to the language? True
-aaab belongs to the language? True
+ab belongs to the language? True
 bab belongs to the language? True
+babb belongs to the language? True
+acb belongs to the language? True
+ba belongs to the language? True
 
 Checking invalid words:
 xyz belongs to the language? False
@@ -171,12 +172,13 @@ abc belongs to the language? False
 da belongs to the language? False
 ae belongs to the language? False
 cc belongs to the language? False
-fS belongs to the language? False
-rL belongs to the language? False
-aee belongs to the language? False
 
 ```
-Source: Lab_1\Lab_1.Application\resources\Result.png
+## Results
+
+Below is a screenshot of the program execution:
+
+![Program Output](Lab_1/Lab_1.Application/resources/Result.png)
 
 ---
 
