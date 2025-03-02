@@ -1,4 +1,6 @@
-﻿namespace Lab_2.Domain;
+﻿using System.Text;
+
+namespace Lab_2.Domain;
 
 public class FiniteAutomaton
 {
@@ -178,4 +180,35 @@ public class FiniteAutomaton
             renamedFinalStates
         );
     }
+    
+    public string ToDot()
+    {
+        var sb = new StringBuilder();
+        sb.AppendLine("digraph DFA {");
+        sb.AppendLine("  rankdir=LR;"); // Left to right layout
+        sb.AppendLine("  node [shape=circle];"); 
+
+        // Mark final states with a double circle
+        foreach (var finalState in FinalStates)
+            sb.AppendLine($"  \"{finalState}\" [shape=doublecircle];");
+
+        // Start state with an invisible arrow
+        sb.AppendLine($"  \"\" -> \"{StartState}\" [label=\"start\"];\n");
+
+        // Define DFA Transitions
+        foreach (var (state, transitions) in Transitions)
+        {
+            foreach (var (symbol, targets) in transitions)
+            {
+                foreach (var target in targets)
+                {
+                    sb.AppendLine($"  \"{state}\" -> \"{target}\" [label=\"{symbol}\"];");
+                }
+            }
+        }
+
+        sb.AppendLine("}");
+        return sb.ToString();
+    }
+
 }
