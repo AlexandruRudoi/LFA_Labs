@@ -106,7 +106,7 @@ class Program
         // **Save the DOT file**
         string dotFilePath = "DFA.dot";
         File.WriteAllText(dotFilePath, dotRepresentation);
-        Console.WriteLine("DFA saved as DFA.dot");
+        Console.WriteLine("\n\nDFA saved as DFA.dot");
 
         // **Generate PNG image**
         GenerateGraphImage(dotFilePath, "DFA.png");
