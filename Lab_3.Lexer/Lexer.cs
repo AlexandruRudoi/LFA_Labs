@@ -67,6 +67,7 @@ public class Lexer
         while (!IsAtEnd())
         {
             char c = Peek();
+
             if (c == ' ' || c == '\t' || c == '\r')
             {
                 Advance();
@@ -77,13 +78,20 @@ public class Lexer
                 _column = 1;
                 Advance();
             }
+            else if (c == '/' && PeekNext() == '/')
+            {
+                SkipLineComment();
+            }
+            else if (c == '/' && PeekNext() == '*')
+            {
+                SkipBlockComment();
+            }
             else
             {
                 break;
             }
         }
     }
-
 
     private Token ReadIdentifierOrKeyword()
     {
@@ -200,5 +208,41 @@ public class Lexer
         _position++;
         _column++;
         return true;
+    }
+
+    private char PeekNext()
+    {
+        return (_position + 1 >= _source.Length) ? '\0' : _source[_position + 1];
+    }
+
+    private void SkipLineComment()
+    {
+        while (!IsAtEnd() && Peek() != '\n')
+            Advance();
+    }
+
+    private void SkipBlockComment()
+    {
+        // Skip the initial '/*'
+        Advance(); // /
+        Advance(); // *
+
+        while (!IsAtEnd())
+        {
+            if (Peek() == '*' && PeekNext() == '/')
+            {
+                Advance(); // *
+                Advance(); // /
+                break;
+            }
+
+            if (Peek() == '\n')
+            {
+                _line++;
+                _column = 1;
+            }
+
+            Advance();
+        }
     }
 }

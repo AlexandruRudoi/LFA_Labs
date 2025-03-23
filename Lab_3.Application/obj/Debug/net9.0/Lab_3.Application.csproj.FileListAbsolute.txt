@@ -16,3 +16,11 @@ D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\obj\Debug\net9.0\refint\
 D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\obj\Debug\net9.0\Lab_3.Application.pdb
 D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\obj\Debug\net9.0\Lab_3.Application.genruntimeconfig.cache
 D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\obj\Debug\net9.0\ref\Lab_3.Application.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Json.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll

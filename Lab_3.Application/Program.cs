@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("AION Lexer - Token Stream");
 
-        string filePath = "D:\\Projects\\University\\LFA_Labs\\Lab_3\\Lab_3.Application\\aion_examples\\template1.aion"; // you can change this path
+        string filePath = "D:\\Projects\\University\\LFA_Labs\\Lab_3\\Lab_3.Application\\resources\\aion_examples\\main.aion";
 
         if (!File.Exists(filePath))
         {
