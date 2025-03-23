@@ -163,7 +163,6 @@ This implementation successfully demonstrates how fundamental concepts from comp
 
 ## **References**
 
-- **Michael Sipser** – *Introduction to the Theory of Computation*
-- Formal Languages & Automata Theory – Course Materials
-- ANTLR, DSL best practices, and compiler front-end design guides
-- C# .NET 9 Documentation ([docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/))
+- **Michael Sipser** – Introduction to the Theory of Computation  
+- **C# .NET 9 Documentation** – [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/)  
+- AION DSL Syntax Draft – Internal Specification  
