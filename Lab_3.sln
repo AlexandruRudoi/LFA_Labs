@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_3.Application", "Lab_3.Application\Lab_3.Application.csproj", "{6DE468F6-8A46-4ADB-85C7-1CD04BB1CF86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_3.Lexer", "Lab_3.Lexer\Lab_3.Lexer.csproj", "{28346CB8-490E-4885-936A-7B1A7E6FE1C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DE468F6-8A46-4ADB-85C7-1CD04BB1CF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE468F6-8A46-4ADB-85C7-1CD04BB1CF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE468F6-8A46-4ADB-85C7-1CD04BB1CF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE468F6-8A46-4ADB-85C7-1CD04BB1CF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28346CB8-490E-4885-936A-7B1A7E6FE1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28346CB8-490E-4885-936A-7B1A7E6FE1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28346CB8-490E-4885-936A-7B1A7E6FE1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28346CB8-490E-4885-936A-7B1A7E6FE1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
