@@ -24,3 +24,5 @@ D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microso
 D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
 D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
 D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Lab_3.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Application\bin\Debug\net9.0\Lab_3.Domain.pdb

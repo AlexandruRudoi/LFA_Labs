@@ -158,9 +158,22 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Lab_3.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Lab_3.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lab_3.Domain.dll": {}
+        }
+      },
       "Lab_3.Lexer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Lab_3.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Lab_3.Lexer.dll": {}
         },
@@ -396,6 +409,11 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Lab_3.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Lab_3.Domain/Lab_3.Domain.csproj",
+      "msbuildProject": "../Lab_3.Domain/Lab_3.Domain.csproj"
     },
     "Lab_3.Lexer/1.0.0": {
       "type": "project",

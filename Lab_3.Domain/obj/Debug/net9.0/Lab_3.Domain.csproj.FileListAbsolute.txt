@@ -1,0 +1,11 @@
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\bin\Debug\net9.0\Lab_3.Domain.deps.json
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\bin\Debug\net9.0\Lab_3.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\bin\Debug\net9.0\Lab_3.Domain.pdb
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\obj\Debug\net9.0\Lab_3.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\obj\Debug\net9.0\Lab_3.Domain.AssemblyInfoInputs.cache
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\obj\Debug\net9.0\Lab_3.Domain.AssemblyInfo.cs
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\obj\Debug\net9.0\Lab_3.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\obj\Debug\net9.0\Lab_3.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\obj\Debug\net9.0\refint\Lab_3.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\obj\Debug\net9.0\Lab_3.Domain.pdb
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Domain\obj\Debug\net9.0\ref\Lab_3.Domain.dll

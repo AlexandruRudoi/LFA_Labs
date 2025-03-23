@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_3.Application", "Lab_3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_3.Lexer", "Lab_3.Lexer\Lab_3.Lexer.csproj", "{28346CB8-490E-4885-936A-7B1A7E6FE1C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_3.Domain", "Lab_3.Domain\Lab_3.Domain.csproj", "{EE5CCB13-672C-4F8E-A1F1-D3A60C60F885}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{28346CB8-490E-4885-936A-7B1A7E6FE1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28346CB8-490E-4885-936A-7B1A7E6FE1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28346CB8-490E-4885-936A-7B1A7E6FE1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE5CCB13-672C-4F8E-A1F1-D3A60C60F885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5CCB13-672C-4F8E-A1F1-D3A60C60F885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5CCB13-672C-4F8E-A1F1-D3A60C60F885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5CCB13-672C-4F8E-A1F1-D3A60C60F885}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

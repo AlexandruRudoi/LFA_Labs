@@ -9,3 +9,7 @@ D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Lexer.d
 D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\refint\Lab_3.Lexer.dll
 D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Lexer.pdb
 D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\ref\Lab_3.Lexer.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\bin\Debug\net9.0\Lab_3.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\bin\Debug\net9.0\Lab_3.Domain.pdb
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Lexer.csproj.AssemblyReference.cache
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Le.B70ABE1D.Up2Date

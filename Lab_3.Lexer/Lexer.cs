@@ -1,39 +1,31 @@
 ﻿using System.Text;
+using Lab_3.Domain;
 
 namespace Lab_3.Lexer;
 
+/// <summary>
+///     Tokenizes AION source code into a stream of typed tokens.
+/// </summary>
 public class Lexer
 {
-    private readonly string _source;
-    private int _position = 0;
-    private int _line = 1;
-    private int _column = 1;
-
+    private readonly SourceReader reader;
     private readonly List<Token> _tokens = new();
-
-    private static readonly HashSet<string> Keywords = new()
-    {
-        "import", "as", "event", "task", "pomodoro", "new", "on", "from", "to",
-        "at", "each", "with", "alarm", "repeat", "times", "break", "weeknumber",
-        "if", "else", "else if", "filter", "merge", "include", "in", "export",
-        "default", "all", "named", "find", "between", "using", "count", "month",
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
-    };
 
     public Lexer(string source)
     {
-        _source = source;
+        reader = new SourceReader(source);
     }
 
+    /// <summary>
+    ///     Entry point for lexical analysis. Converts the source into a token list.
+    /// </summary>
     public List<Token> Tokenize()
     {
-        while (!IsAtEnd())
+        while (!reader.IsAtEnd)
         {
             SkipWhitespace();
-            int startCol = _column;
-            char current = Peek();
+            int col = reader.Column;
+            char current = reader.Peek();
 
             if (char.IsLetter(current) || current == '_')
                 _tokens.Add(ReadIdentifierOrKeyword());
@@ -42,207 +34,164 @@ public class Lexer
             else if (current == '"')
                 _tokens.Add(ReadString());
             else
-                _tokens.Add(ReadSymbol());
-
-            // EOF is added explicitly at the end
+            {
+                var token = ReadSymbol();
+                if (token != null)
+                    _tokens.Add(token);
+            }
         }
 
-        _tokens.Add(new Token(TokenType.EndOfFile, "", _line, _column));
+        _tokens.Add(new Token(TokenType.EndOfFile, "", reader.Line, reader.Column));
         return _tokens;
-    }
-
-    // Utility methods (to be implemented next)
-    private bool IsAtEnd() => _position >= _source.Length;
-    private char Peek() => IsAtEnd() ? '\0' : _source[_position];
-
-    private char Advance()
-    {
-        char c = _source[_position++];
-        _column++;
-        return c;
     }
 
     private void SkipWhitespace()
     {
-        while (!IsAtEnd())
+        while (!reader.IsAtEnd)
         {
-            char c = Peek();
+            char c = reader.Peek();
 
             if (c == ' ' || c == '\t' || c == '\r')
-            {
-                Advance();
-            }
+                reader.Advance();
             else if (c == '\n')
-            {
-                _line++;
-                _column = 1;
-                Advance();
-            }
-            else if (c == '/' && PeekNext() == '/')
-            {
+                reader.Advance();
+            else if (c == '/' && reader.PeekNext() == '/')
                 SkipLineComment();
-            }
-            else if (c == '/' && PeekNext() == '*')
-            {
+            else if (c == '/' && reader.PeekNext() == '*')
                 SkipBlockComment();
-            }
             else
+                break;
+        }
+    }
+
+    private void SkipLineComment()
+    {
+        while (!reader.IsAtEnd && reader.Peek() != '\n')
+            reader.Advance();
+    }
+
+    private void SkipBlockComment()
+    {
+        reader.Advance(); // /
+        reader.Advance(); // *
+
+        while (!reader.IsAtEnd)
+        {
+            if (reader.Peek() == '*' && reader.PeekNext() == '/')
             {
+                reader.Advance(); // *
+                reader.Advance(); // /
                 break;
             }
+
+            reader.Advance();
         }
     }
 
     private Token ReadIdentifierOrKeyword()
     {
-        int start = _position;
-        int col = _column;
+        int startCol = reader.Column;
+        int startPos = reader.Position;
 
-        while (!IsAtEnd() && (char.IsLetterOrDigit(Peek()) || Peek() == '_'))
-            Advance();
+        while (!reader.IsAtEnd && (char.IsLetterOrDigit(reader.Peek()) || reader.Peek() == '_'))
+            reader.Advance();
 
-        string lexeme = _source.Substring(start, _position - start);
+        string lexeme = reader.Substring(startPos, reader.Position - startPos);
+        TokenType type = Keywords.All.Contains(lexeme) ? TokenType.Keyword : TokenType.Identifier;
 
-        TokenType type = Keywords.Contains(lexeme)
-            ? TokenType.Keyword
-            : TokenType.Identifier;
-
-        return new Token(type, lexeme, _line, col);
+        return new Token(type, lexeme, reader.Line, startCol);
     }
 
     private Token ReadNumberOrDuration()
     {
-        int start = _position;
-        int col = _column;
+        int startCol = reader.Column;
+        int startPos = reader.Position;
         bool hasDot = false;
 
-        while (!IsAtEnd() && (char.IsDigit(Peek()) || Peek() == '.'))
+        while (!reader.IsAtEnd && (char.IsDigit(reader.Peek()) || reader.Peek() == '.'))
         {
-            if (Peek() == '.')
+            if (reader.Peek() == '.')
             {
-                if (hasDot)
-                    break; // second dot, break
+                if (hasDot) break;
                 hasDot = true;
             }
 
-            Advance();
+            reader.Advance();
         }
 
-        string number = _source.Substring(start, _position - start);
+        string number = reader.Substring(startPos, reader.Position - startPos);
 
-        // Check for duration suffix: "m" or "h"
-        if (!IsAtEnd() && (Peek() == 'm' || Peek() == 'h'))
+        if (!reader.IsAtEnd && (reader.Peek() == 'h' || reader.Peek() == 'm'))
         {
-            char unit = Advance();
-            return new Token(TokenType.Duration, number + unit, _line, col);
+            char unit = reader.Advance();
+            return new Token(TokenType.Duration, number + unit, reader.Line, startCol);
         }
 
-        return new Token(TokenType.Number, number, _line, col);
+        return new Token(TokenType.Number, number, reader.Line, startCol);
     }
 
     private Token ReadString()
     {
-        int col = _column;
-        Advance(); // Skip opening quote
+        int col = reader.Column;
+        reader.Advance(); // skip opening "
 
         StringBuilder sb = new();
 
-        while (!IsAtEnd() && Peek() != '"')
+        while (!reader.IsAtEnd && reader.Peek() != '"')
         {
-            if (Peek() == '\n')
-            {
-                _line++;
-                _column = 1;
-            }
-
-            sb.Append(Advance());
+            sb.Append(reader.Advance());
         }
 
-        if (IsAtEnd())
-            return new Token(TokenType.Unknown, sb.ToString(), _line, col); // unterminated
+        if (reader.IsAtEnd)
+            return new Token(TokenType.Unknown, sb.ToString(), reader.Line, col);
 
-        Advance(); // Skip closing quote
-        return new Token(TokenType.String, sb.ToString(), _line, col);
+        reader.Advance(); // skip closing "
+        return new Token(TokenType.String, sb.ToString(), reader.Line, col);
     }
 
-
-    private Token ReadSymbol()
+    private Token? ReadSymbol()
     {
-        if (IsAtEnd()) return new Token(TokenType.EndOfFile, "", _line, _column);
+        if (reader.IsAtEnd)
+            return null;
 
-        int col = _column;
-        char current = Advance();
+        char peek = reader.Peek();
+        if (peek == '\0')
+        {
+            reader.Advance(); // consume it so we move forward
+            return null; // skip meaningless null token
+        }
+
+        int col = reader.Column;
+        char current = reader.Advance();
 
         switch (current)
         {
             case '=':
-                if (Match('=')) return new Token(TokenType.Equal, "==", _line, col);
-                return new Token(TokenType.Assign, "=", _line, col);
+                return reader.Match('=')
+                    ? new Token(TokenType.Equal, "==", reader.Line, col)
+                    : new Token(TokenType.Assign, "=", reader.Line, col);
             case '!':
-                if (Match('=')) return new Token(TokenType.NotEqual, "!=", _line, col);
-                break;
+                return reader.Match('=')
+                    ? new Token(TokenType.NotEqual, "!=", reader.Line, col)
+                    : new Token(TokenType.Unknown, "!", reader.Line, col);
             case '<':
-                if (Match('=')) return new Token(TokenType.LessEqual, "<=", _line, col);
-                return new Token(TokenType.Less, "<", _line, col);
+                return reader.Match('=')
+                    ? new Token(TokenType.LessEqual, "<=", reader.Line, col)
+                    : new Token(TokenType.Less, "<", reader.Line, col);
             case '>':
-                if (Match('=')) return new Token(TokenType.GreaterEqual, ">=", _line, col);
-                return new Token(TokenType.Greater, ">", _line, col);
-            case '{': return new Token(TokenType.LeftBrace, "{", _line, col);
-            case '}': return new Token(TokenType.RightBrace, "}", _line, col);
-            case '(': return new Token(TokenType.LeftParen, "(", _line, col);
-            case ')': return new Token(TokenType.RightParen, ")", _line, col);
-            case ',': return new Token(TokenType.Comma, ",", _line, col);
-            case ';': return new Token(TokenType.Semicolon, ";", _line, col);
-            case ':': return new Token(TokenType.Colon, ":", _line, col);
-            case '.': return new Token(TokenType.Dot, ".", _line, col);
+                return reader.Match('=')
+                    ? new Token(TokenType.GreaterEqual, ">=", reader.Line, col)
+                    : new Token(TokenType.Greater, ">", reader.Line, col);
+            case '{': return new Token(TokenType.LeftBrace, "{", reader.Line, col);
+            case '}': return new Token(TokenType.RightBrace, "}", reader.Line, col);
+            case '(': return new Token(TokenType.LeftParen, "(", reader.Line, col);
+            case ')': return new Token(TokenType.RightParen, ")", reader.Line, col);
+            case ',': return new Token(TokenType.Comma, ",", reader.Line, col);
+            case ';': return new Token(TokenType.Semicolon, ";", reader.Line, col);
+            case ':': return new Token(TokenType.Colon, ":", reader.Line, col);
+            case '.': return new Token(TokenType.Dot, ".", reader.Line, col);
         }
 
-        return new Token(TokenType.Unknown, current.ToString(), _line, col);
-    }
-
-    private bool Match(char expected)
-    {
-        if (IsAtEnd()) return false;
-        if (_source[_position] != expected) return false;
-
-        _position++;
-        _column++;
-        return true;
-    }
-
-    private char PeekNext()
-    {
-        return (_position + 1 >= _source.Length) ? '\0' : _source[_position + 1];
-    }
-
-    private void SkipLineComment()
-    {
-        while (!IsAtEnd() && Peek() != '\n')
-            Advance();
-    }
-
-    private void SkipBlockComment()
-    {
-        // Skip the initial '/*'
-        Advance(); // /
-        Advance(); // *
-
-        while (!IsAtEnd())
-        {
-            if (Peek() == '*' && PeekNext() == '/')
-            {
-                Advance(); // *
-                Advance(); // /
-                break;
-            }
-
-            if (Peek() == '\n')
-            {
-                _line++;
-                _column = 1;
-            }
-
-            Advance();
-        }
+        return new Token(TokenType.Unknown, current.ToString(), reader.Line, col);
     }
 }
