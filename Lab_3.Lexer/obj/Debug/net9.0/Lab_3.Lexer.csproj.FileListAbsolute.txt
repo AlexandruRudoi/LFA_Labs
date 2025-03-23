@@ -1,0 +1,11 @@
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\bin\Debug\net9.0\Lab_3.Lexer.deps.json
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\bin\Debug\net9.0\Lab_3.Lexer.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\bin\Debug\net9.0\Lab_3.Lexer.pdb
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Lexer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Lexer.AssemblyInfoInputs.cache
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Lexer.AssemblyInfo.cs
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Lexer.csproj.CoreCompileInputs.cache
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Lexer.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\refint\Lab_3.Lexer.dll
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\Lab_3.Lexer.pdb
+D:\Projects\University\LFA_Labs\Lab_3\Lab_3.Lexer\obj\Debug\net9.0\ref\Lab_3.Lexer.dll
