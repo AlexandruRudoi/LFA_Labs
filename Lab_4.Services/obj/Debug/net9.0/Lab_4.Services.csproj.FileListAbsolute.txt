@@ -1,0 +1,15 @@
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\bin\Debug\net9.0\Lab_4.Services.deps.json
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\bin\Debug\net9.0\Lab_4.Services.dll
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\bin\Debug\net9.0\Lab_4.Services.pdb
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\bin\Debug\net9.0\Lab_4.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\bin\Debug\net9.0\Lab_4.Domain.pdb
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\Lab_4.Services.csproj.AssemblyReference.cache
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\Lab_4.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\Lab_4.Services.AssemblyInfoInputs.cache
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\Lab_4.Services.AssemblyInfo.cs
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\Lab_4.Services.csproj.CoreCompileInputs.cache
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\Lab_4.Se.2118A2D2.Up2Date
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\Lab_4.Services.dll
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\refint\Lab_4.Services.dll
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\Lab_4.Services.pdb
+D:\Projects\University\LFA_Labs\Lab_4\Lab_4.Services\obj\Debug\net9.0\ref\Lab_4.Services.dll
