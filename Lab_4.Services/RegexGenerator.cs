@@ -67,13 +67,14 @@ public class RegexGenerator
         return result;
     }
 
-
+    // Obsolete method for generating multiple strings
     public IEnumerable<string> GenerateMany(RegexNode node, int count)
     {
         for (int i = 0; i < count; i++)
             yield return Generate(node);
     }
 
+    // Obsolete method for showing abstract steps
     public void ExplainSteps(RegexNode node, int indent = 0)
     {
         string prefix = new string(' ', indent * 2);
