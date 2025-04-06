@@ -21,6 +21,10 @@ class Program
         converter.Normalize();
 
         PrintPrettyProductions(grammar);
+
+        // Export the grammar to a DOT file for visualization
+        // For png: dot -Tpng grammar.dot -o grammar.png
+        Graphviz.ExportGrammarToDot(grammar, "grammar.dot");
     }
 
     static void PrintPrettyProductions(Grammar grammar)
