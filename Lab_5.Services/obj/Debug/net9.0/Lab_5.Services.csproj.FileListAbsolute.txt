@@ -1,0 +1,16 @@
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\bin\Debug\net9.0\Lab_5.Services.deps.json
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\bin\Debug\net9.0\Lab_5.Services.dll
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\bin\Debug\net9.0\Lab_5.Services.pdb
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\bin\Debug\net9.0\Lab_5.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\bin\Debug\net9.0\Lab_5.Domain.pdb
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\Lab_5.Services.csproj.AssemblyReference.cache
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\Lab_5.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\Lab_5.Services.AssemblyInfoInputs.cache
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\Lab_5.Services.AssemblyInfo.cs
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\Lab_5.Services.csproj.CoreCompileInputs.cache
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\Lab_5.Services.sourcelink.json
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\Lab_5.Se.212BC38D.Up2Date
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\Lab_5.Services.dll
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\refint\Lab_5.Services.dll
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\Lab_5.Services.pdb
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Services\obj\Debug\net9.0\ref\Lab_5.Services.dll

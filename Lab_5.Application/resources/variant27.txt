@@ -1,0 +1,12 @@
+﻿VN: S A B C D
+VT: a b
+S -> b A
+S -> A C
+A -> b S
+A -> B C
+A -> A b C
+B -> C b a C
+B -> a
+B -> b S a
+C -> ε
+D -> A B

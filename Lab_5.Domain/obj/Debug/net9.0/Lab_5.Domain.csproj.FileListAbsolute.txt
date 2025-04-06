@@ -1,0 +1,12 @@
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\bin\Debug\net9.0\Lab_5.Domain.deps.json
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\bin\Debug\net9.0\Lab_5.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\bin\Debug\net9.0\Lab_5.Domain.pdb
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\obj\Debug\net9.0\Lab_5.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\obj\Debug\net9.0\Lab_5.Domain.AssemblyInfoInputs.cache
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\obj\Debug\net9.0\Lab_5.Domain.AssemblyInfo.cs
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\obj\Debug\net9.0\Lab_5.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\obj\Debug\net9.0\Lab_5.Domain.sourcelink.json
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\obj\Debug\net9.0\Lab_5.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\obj\Debug\net9.0\refint\Lab_5.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\obj\Debug\net9.0\Lab_5.Domain.pdb
+D:\Projects\University\LFA_Labs\Lab_5\Lab_5.Domain\obj\Debug\net9.0\ref\Lab_5.Domain.dll
