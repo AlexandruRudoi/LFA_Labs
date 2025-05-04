@@ -8,7 +8,6 @@ D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Parser
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Parser.AssemblyInfoInputs.cache
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Parser.AssemblyInfo.cs
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Parser.csproj.CoreCompileInputs.cache
-D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Parser.sourcelink.json
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Pa.C7523C65.Up2Date
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Parser.dll
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\refint\Lab_6.Parser.dll

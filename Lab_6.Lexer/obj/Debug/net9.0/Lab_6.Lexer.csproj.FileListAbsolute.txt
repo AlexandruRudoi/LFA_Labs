@@ -8,7 +8,6 @@ D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Lexer.G
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Lexer.AssemblyInfoInputs.cache
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Lexer.AssemblyInfo.cs
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Lexer.csproj.CoreCompileInputs.cache
-D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Lexer.sourcelink.json
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Le.B70828C2.Up2Date
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Lexer.dll
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\refint\Lab_6.Lexer.dll

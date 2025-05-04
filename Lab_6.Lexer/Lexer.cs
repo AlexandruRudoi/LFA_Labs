@@ -110,27 +110,33 @@ public class Lexer
     {
         int startCol = _reader.Column;
         int startPos = _reader.Position;
+        int dotCount = 0;
 
         while (!_reader.IsAtEnd && (char.IsDigit(_reader.Peek()) || _reader.Peek() == '.'))
-            _reader.Advance();
-
-        string number = _reader.Substring(startPos, _reader.Position - startPos);
-
-        // Extra regex validation
-        if (!System.Text.RegularExpressions.Regex.IsMatch(number, @"^\d+(\.\d+)?$"))
         {
-            return new Token(TokenType.Unknown, number, _reader.Line, startCol);
+            if (_reader.Peek() == '.') dotCount++;
+            _reader.Advance();
         }
 
+        string value = _reader.Substring(startPos, _reader.Position - startPos);
+
+        // Handle full date like 2025.03.25
+        if (dotCount == 2 && System.Text.RegularExpressions.Regex.IsMatch(value, @"^\d{4}\.\d{2}\.\d{2}$"))
+            return new Token(TokenType.String, value, _reader.Line, startCol);
+
+        // Duration suffix (like 2h, 5m)
         if (!_reader.IsAtEnd && (_reader.Peek() == 'h' || _reader.Peek() == 'm'))
         {
             char unit = _reader.Advance();
-            return new Token(TokenType.Duration, number + unit, _reader.Line, startCol);
+            return new Token(TokenType.Duration, value + unit, _reader.Line, startCol);
         }
 
-        return new Token(TokenType.Number, number, _reader.Line, startCol);
-    }
+        // Validate float/integer (e.g., 10 or 3.14)
+        if (!System.Text.RegularExpressions.Regex.IsMatch(value, @"^\d+(\.\d+)?$"))
+            return new Token(TokenType.Unknown, value, _reader.Line, startCol);
 
+        return new Token(TokenType.Number, value, _reader.Line, startCol);
+    }
 
     private Token ReadString()
     {

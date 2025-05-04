@@ -14,7 +14,6 @@ D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.A
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.Application.AssemblyInfoInputs.cache
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.Application.AssemblyInfo.cs
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.Application.csproj.CoreCompileInputs.cache
-D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.Application.sourcelink.json
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.Ap.7F9C7D68.Up2Date
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.Application.dll
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\refint\Lab_6.Application.dll

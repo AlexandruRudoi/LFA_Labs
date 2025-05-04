@@ -5,7 +5,6 @@ D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain.AssemblyInfoInputs.cache
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain.AssemblyInfo.cs
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain.csproj.CoreCompileInputs.cache
-D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain.sourcelink.json
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain.dll
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\refint\Lab_6.Domain.dll
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain.pdb

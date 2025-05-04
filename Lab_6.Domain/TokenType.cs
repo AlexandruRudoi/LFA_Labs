@@ -16,10 +16,10 @@ public enum TokenType
     Identifier, String, Number, Duration,
 
     // Keywords
-    Import, As, Event, Task, Pomodoro, New, On, From, To,
+    Import, As, Event, Task, Pomodoro, New, On, From, To, Into,
     At, Each, With, Alarm, Repeat, Times, Break, WeekNumber,
     If, Else, ElseIf, Filter, Merge, Include, In, Export,
-    Default, All, Named, Find, Between, Using, Count, Month,
+    Default, All, Named, Find, Between, Using, Count, Month, Day, Where, Every,
 
     // Days of the week
     Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday,

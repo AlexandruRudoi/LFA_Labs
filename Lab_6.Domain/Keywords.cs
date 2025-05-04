@@ -38,6 +38,10 @@ public static class Keywords
         ["using"] = TokenType.Using,
         ["count"] = TokenType.Count,
         ["month"] = TokenType.Month,
+        ["day"] = TokenType.Day,
+        ["into"] = TokenType.Into,
+        ["where"] = TokenType.Where,
+        ["every"] = TokenType.Every,
 
         // Days of the week
         ["monday"] = TokenType.Monday,
