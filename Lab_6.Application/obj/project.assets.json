@@ -1,0 +1,144 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Lab_6.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Lab_6.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lab_6.Domain.dll": {}
+        }
+      },
+      "Lab_6.Lexer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Lab_6.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lab_6.Lexer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lab_6.Lexer.dll": {}
+        }
+      },
+      "Lab_6.Parser/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Lab_6.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lab_6.Parser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lab_6.Parser.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab_6.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Lab_6.Domain/Lab_6.Domain.csproj",
+      "msbuildProject": "../Lab_6.Domain/Lab_6.Domain.csproj"
+    },
+    "Lab_6.Lexer/1.0.0": {
+      "type": "project",
+      "path": "../Lab_6.Lexer/Lab_6.Lexer.csproj",
+      "msbuildProject": "../Lab_6.Lexer/Lab_6.Lexer.csproj"
+    },
+    "Lab_6.Parser/1.0.0": {
+      "type": "project",
+      "path": "../Lab_6.Parser/Lab_6.Parser.csproj",
+      "msbuildProject": "../Lab_6.Parser/Lab_6.Parser.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Lab_6.Domain >= 1.0.0",
+      "Lab_6.Lexer >= 1.0.0",
+      "Lab_6.Parser >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\alex\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Projects\\University\\LFA_Labs\\Lab_6\\Lab_6.Application\\Lab_6.Application.csproj",
+      "projectName": "Lab_6.Application",
+      "projectPath": "D:\\Projects\\University\\LFA_Labs\\Lab_6\\Lab_6.Application\\Lab_6.Application.csproj",
+      "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\University\\LFA_Labs\\Lab_6\\Lab_6.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "D:\\Projects\\University\\LFA_Labs\\Lab_6\\Lab_6.Domain\\Lab_6.Domain.csproj": {
+              "projectPath": "D:\\Projects\\University\\LFA_Labs\\Lab_6\\Lab_6.Domain\\Lab_6.Domain.csproj"
+            },
+            "D:\\Projects\\University\\LFA_Labs\\Lab_6\\Lab_6.Lexer\\Lab_6.Lexer.csproj": {
+              "projectPath": "D:\\Projects\\University\\LFA_Labs\\Lab_6\\Lab_6.Lexer\\Lab_6.Lexer.csproj"
+            },
+            "D:\\Projects\\University\\LFA_Labs\\Lab_6\\Lab_6.Parser\\Lab_6.Parser.csproj": {
+              "projectPath": "D:\\Projects\\University\\LFA_Labs\\Lab_6\\Lab_6.Parser\\Lab_6.Parser.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

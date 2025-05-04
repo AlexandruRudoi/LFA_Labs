@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Lab_6.Domain\Lab_6.Domain.csproj" />
+      <ProjectReference Include="..\Lab_6.Lexer\Lab_6.Lexer.csproj" />
+      <ProjectReference Include="..\Lab_6.Parser\Lab_6.Parser.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="resources\" />
+    </ItemGroup>
+
+</Project>

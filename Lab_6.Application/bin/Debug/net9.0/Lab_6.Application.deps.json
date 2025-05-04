@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Lab_6.Application/1.0.0": {
+        "dependencies": {
+          "Lab_6.Domain": "1.0.0",
+          "Lab_6.Lexer": "1.0.0",
+          "Lab_6.Parser": "1.0.0"
+        },
+        "runtime": {
+          "Lab_6.Application.dll": {}
+        }
+      },
+      "Lab_6.Domain/1.0.0": {
+        "runtime": {
+          "Lab_6.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Lab_6.Lexer/1.0.0": {
+        "dependencies": {
+          "Lab_6.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Lab_6.Lexer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Lab_6.Parser/1.0.0": {
+        "dependencies": {
+          "Lab_6.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Lab_6.Parser.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab_6.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lab_6.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lab_6.Lexer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Lab_6.Parser/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
