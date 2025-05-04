@@ -33,23 +33,27 @@ The system follows a clean architecture, with separate layers for the lexer, par
 Lab_6/
 │
 ├── Domain/               // Core AST structures and token types
-│   ├── TokenType.cs      // Defines token types for lexical analysis
+│   ├── TokenType.cs      // Defines token types for lexical 
 │   ├── ASTNode.cs        // Defines AST node structure
+│   ├── Keywords.cs       // Defines keywords
 │   └── Token.cs          // Represents individual tokens
 │
-├── Services/             // Lexer and parser logic
-│   ├── Lexer.cs          // Tokenization and lexical analysis
+├── Lexer/             // Lexer logic
+│   └── Lexer.cs          // Tokenization and lexical analysis
+│
+├── Parser/             // Parser logic
 │   ├── Parser.cs         // Parsing and AST construction
+│   └── ...
 │
 ├── Application/          // Main entry point and execution logic
-│   ├── Program.cs        // Executes the parsing and AST generation
-│   ├── Tokenizer.cs      // Runs tokenization process
-│   ├── ParserRunner.cs   // Runs parsing logic
-│   └── resources/
-│       ├── sample.dl     // Sample input DSL file
-│       ├── grammar.dot   // Graphviz representation of AST
-│       └── result.ast    // Output AST file
-│
+│   ├── Program.cs        // Executes the parsing and AST 
+│   └── resources/       // Executes the parsing and AST 
+│       ├── task.md
+│       ├── grammar_BNF.md
+│       ├── grammar_table.md
+│       └── aion_examples/
+│            └── example.aion
+│ 
 ```
 
 ### **Parser Implementation**

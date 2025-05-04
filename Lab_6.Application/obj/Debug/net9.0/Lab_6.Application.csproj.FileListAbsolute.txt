@@ -20,3 +20,4 @@ D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\refint\
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.Application.pdb
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.Application.genruntimeconfig.cache
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\ref\Lab_6.Application.dll
+D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Application\obj\Debug\net9.0\Lab_6.Application.sourcelink.json

@@ -13,3 +13,4 @@ D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Parser
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\refint\Lab_6.Parser.dll
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Parser.pdb
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\ref\Lab_6.Parser.dll
+D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Parser\obj\Debug\net9.0\Lab_6.Parser.sourcelink.json

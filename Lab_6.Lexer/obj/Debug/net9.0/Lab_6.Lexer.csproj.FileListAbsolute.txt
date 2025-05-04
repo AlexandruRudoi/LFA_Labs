@@ -13,3 +13,4 @@ D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Lexer.d
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\refint\Lab_6.Lexer.dll
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Lexer.pdb
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\ref\Lab_6.Lexer.dll
+D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Lexer\obj\Debug\net9.0\Lab_6.Lexer.sourcelink.json

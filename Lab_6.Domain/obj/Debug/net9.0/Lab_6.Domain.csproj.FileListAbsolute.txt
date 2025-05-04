@@ -9,3 +9,4 @@ D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\refint\Lab_6.Domain.dll
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain.pdb
 D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\ref\Lab_6.Domain.dll
+D:\Projects\University\LFA_Labs\Lab_6\Lab_6.Domain\obj\Debug\net9.0\Lab_6.Domain.sourcelink.json
