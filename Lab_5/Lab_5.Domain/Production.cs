@@ -11,5 +11,5 @@ public class Production
         Right = right.ToList();
     }
 
-    public override string ToString() => $"{Left} → {string.Join("", Right)}";
+    public override string ToString() => $"{Left} -> {string.Join("", Right)}";
 }

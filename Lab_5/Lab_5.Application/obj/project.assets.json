@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "Lab_5.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Lab_5.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lab_5.Domain.dll": {}
+        }
+      },
+      "Lab_5.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Lab_5.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lab_5.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lab_5.Services.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Lab_5.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Lab_5.Domain/Lab_5.Domain.csproj",
+      "msbuildProject": "../Lab_5.Domain/Lab_5.Domain.csproj"
+    },
+    "Lab_5.Services/1.0.0": {
+      "type": "project",
+      "path": "../Lab_5.Services/Lab_5.Services.csproj",
+      "msbuildProject": "../Lab_5.Services/Lab_5.Services.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "Lab_5.Domain >= 1.0.0",
+      "Lab_5.Services >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\alex\\.nuget\\packages\\": {}
@@ -31,7 +69,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects\\University\\LFA_Labs\\Lab_5\\Lab_5.Domain\\Lab_5.Domain.csproj": {
+              "projectPath": "D:\\Projects\\University\\LFA_Labs\\Lab_5\\Lab_5.Domain\\Lab_5.Domain.csproj"
+            },
+            "D:\\Projects\\University\\LFA_Labs\\Lab_5\\Lab_5.Services\\Lab_5.Services.csproj": {
+              "projectPath": "D:\\Projects\\University\\LFA_Labs\\Lab_5\\Lab_5.Services\\Lab_5.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
